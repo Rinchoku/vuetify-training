@@ -6,11 +6,18 @@
 </head>
 <body>
     <div id="app">
-        <v-app>
-            <v-main>
-                <v-text-field v-model="message"></v-text-field>
-            </v-main>
-        </v-app>
+        <v-layout>
+            <v-app>
+                <v-app-bar>App Bar</v-app-bar>
+                <v-system-bar>System Bar</v-system-bar>
+                <v-navigation-drawer>Navigation Drawer</v-navigation-drawer>
+                <v-main>
+                    <v-text-field v-model="message"></v-text-field>
+                </v-main>
+                <v-footer>Footer</v-footer>
+                <v-bottom-navigation>Bottom Navigation</v-bottom-navigation>
+            </v-app>
+        </v-layout>
     </div>
 
     <script src="./base.js"></script>
