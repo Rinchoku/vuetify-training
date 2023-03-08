@@ -1,0 +1,37 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vuetify@3.1.7/dist/vuetify.min.css"></style>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@3.1.7/dist/vuetify.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <v-layout>
+            <v-app>
+                    <div class="d-flex justify-end align-center">
+                        <v-btn variant="text" size="small">Gmail</v-btn>
+                        <v-btn variant="text" size="small">画像</v-btn>
+                        <v-btn variant="text" icon="mdi-apps" size="small"></v-btn>
+                    </div>
+                <v-main>
+                    <v-responsive
+                        class="mx-auto"
+                        max-width="500"
+                    >
+                    <v-text-field
+                        variant="outlined"
+                        prepend-inner-icon="mdi-magnify"
+                        append-inner-icon="mdi-microphone-outline"
+                        placeholder="Google検索の模倣中"
+                        v-model="message"
+                    ></v-text-field>
+                </v-responsive>
+                </v-main>
+                <v-footer>Footer</v-footer>
+            </v-app>
+        </v-layout>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
