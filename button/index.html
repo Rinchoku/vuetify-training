@@ -1,0 +1,25 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vuetify@3.1.7/dist/vuetify.min.css"></style>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@3.1.7/dist/vuetify.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <v-layout>
+            <v-app>
+                <v-app-bar>App Bar</v-app-bar>
+                <v-system-bar>System Bar</v-system-bar>
+                <v-main>
+                    <v-btn append-icon="pending_actions">Button</v-btn>
+                    <v-btn block ripple="true">Block Button</v-btn>
+                    <v-btn loading>loading button</v-btn>
+                </v-main>
+                <v-footer>Footer</v-footer>
+            </v-app>
+        </v-layout>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
