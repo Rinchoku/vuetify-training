@@ -9,26 +9,39 @@
     <div id="app">
         <v-layout>
             <v-app>
-                    <div class="d-flex justify-end align-center">
-                        <v-btn variant="text" size="small">Gmail</v-btn>
-                        <v-btn variant="text" size="small">画像</v-btn>
-                        <v-btn variant="text" icon="mdi-apps" size="small"></v-btn>
-                    </div>
+                <div class="d-flex justify-end align-center">
+                    <v-btn variant="text" size="small">Gmail</v-btn>
+                    <v-btn variant="text" size="small">画像</v-btn>
+                    <v-btn variant="text" icon="mdi-apps" size="small"></v-btn>
+                </div>
                 <v-main>
                     <v-responsive
-                        class="mx-auto"
+                        class="mx-auto d-flex justify-center"
                         max-width="500"
                     >
-                    <v-text-field
-                        variant="outlined"
-                        prepend-inner-icon="mdi-magnify"
-                        append-inner-icon="mdi-microphone-outline"
-                        placeholder="Google検索の模倣中"
-                        v-model="message"
-                    ></v-text-field>
-                </v-responsive>
+                        <v-img
+                            class="mx-4 py-5"
+                            aspect-ratio="16/9"
+                            src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+                        ></v-img>
+                        <v-text-field
+                            variant="outlined"
+                            prepend-inner-icon="mdi-magnify"
+                            append-inner-icon="mdi-microphone-outline"
+                            placeholder="Google検索の模倣中"
+                            v-model="message"
+                        ></v-text-field>
+                    </v-responsive>
+                    <div class="d-flex align-center flex-column">
+                        <v-btn stacked flat>
+                            <v-icon variant="tonal" class="rounded-circle bg-blue-grey-lighten-5" icon="mdi-plus"></v-icon>
+                            ショートカット
+                        </v-btn>
+                    </div>
                 </v-main>
-                <v-footer>Footer</v-footer>
+                <v-footer class="d-flex justify-end">
+                    <v-btn color="blue-lighten-2" prepend-icon="mdi-pencil" outlined>カスタマイズ</v-btn>
+                </v-footer>
             </v-app>
         </v-layout>
     </div>
