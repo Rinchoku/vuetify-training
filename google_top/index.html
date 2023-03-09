@@ -38,9 +38,14 @@
                             ショートカット
                         </v-btn>
                     </div>
+                    <v-dialog v-model="showCustomDialog">
+                        <v-card>
+                            <v-card-text>Hello World.</v-card-text>
+                        </v-card>
+                    </v-dialog>
                 </v-main>
                 <v-footer class="d-flex justify-end">
-                    <v-btn color="blue-lighten-2" prepend-icon="mdi-pencil" outlined>カスタマイズ</v-btn>
+                    <v-btn color="blue-lighten-2" prepend-icon="mdi-pencil" outlined @click="toggleShowCustomDialog">カスタマイズ</v-btn>
                 </v-footer>
             </v-app>
         </v-layout>
