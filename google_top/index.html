@@ -39,9 +39,85 @@
                         </v-btn>
                     </div>
                     <v-dialog v-model="showCustomDialog">
-                        <v-card>
-                            <v-card-text>Hello World.</v-card-text>
-                        </v-card>
+                        <div class="d-flex justify-center">
+                            <v-card  width="70%">
+                                <v-row>
+                                    <v-col cols="2">
+                                        <v-list lines="one" density="compact">
+                                            <v-list-item>
+                                                <v-btn variant="text" prepend-icon="mdi-picture-in-picture-bottom-right">背景</v-btn>
+                                            </v-list-item>
+                                            <v-list-item>
+                                                <v-btn variant="text" prepend-icon="mdi-link">ショートカット</v-btn>
+                                            </v-list-item>
+                                            <v-list-item>
+                                                <v-btn variant="text" prepend-icon="mdi-palette">色とテーマ</v-btn>
+                                            </v-list-item>
+                                        </v-list>
+                                    </v-col>
+                                    <v-col>
+                                        <v-card-text>ページのカスタマイズ</v-card-text>
+                                        <v-container>
+                                            <v-row dense>
+                                                <v-col cols="4">
+                                                    <v-card>
+                                                        <v-img height="100px" aspect-ratio="1" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-btn>
+                                                    </v-card>
+                                                </v-col>
+                                                <v-col cols="4">
+                                                    <v-card>
+                                                        <v-img height="100px" aspect-ratio="1" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-btn>
+                                                    </v-card>
+                                                </v-col>
+                                                <v-col cols="4">
+                                                    <v-card>
+                                                        <v-img height="100px" aspect-ratio="1" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-btn>
+                                                    </v-card>
+                                                </v-col>
+                                            </v-row>
+                                            <v-row dense>
+                                                <v-col cols="4">
+                                                    <v-card>
+                                                        <v-img height="100px" aspect-ratio="1" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-btn>
+                                                    </v-card>
+                                                </v-col>
+                                                <v-col cols="4">
+                                                    <v-card>
+                                                        <v-img height="100px" aspect-ratio="1" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-btn>
+                                                    </v-card>
+                                                </v-col>
+                                                <v-col cols="4">
+                                                    <v-card>
+                                                        <v-img height="100px" aspect-ratio="1" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-btn>
+                                                    </v-card>
+                                                </v-col>
+                                            </v-row>
+                                            <v-row dense>
+                                                <v-col cols="4">
+                                                    <v-card>
+                                                        <v-img height="100px" aspect-ratio="1" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-btn>
+                                                    </v-card>
+                                                </v-col>
+                                                <v-col cols="4">
+                                                    <v-card>
+                                                        <v-img height="100px" aspect-ratio="1" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-btn>
+                                                    </v-card>
+                                                </v-col>
+                                                <v-col cols="4">
+                                                    <v-card>
+                                                        <v-img height="100px" aspect-ratio="1" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-btn>
+                                                    </v-card>
+                                                </v-col>
+                                            </v-row>
+                                        </v-container>
+                                    </v-col>
+                                </v-row>
+                                <v-footer class="d-flex justify-end">
+                                        <v-btn @click="toggleShowCustomDialog">キャンセル</v-btn>
+                                        <v-btn color="blue-lighten-2" @click="toggleShowCustomDialog">完了</v-btn>
+                                </v-footer>
+                            </v-card>
+                        </div>
                     </v-dialog>
                 </v-main>
                 <v-footer class="d-flex justify-end">
