@@ -15,7 +15,13 @@ vuetifyを触れてみるためのレポジトリ
 * フッター(v-footer)
 * ボトムナビゲーション(v-bottom-navigation)
 
+## ボタン
+
+[Button API](https://vuetifyjs.com/en/api/v-btn/)
+
+
 ## 参考
 
 * [ホーム](https://vuetifyjs.com/en/)
 * [vuetifyの例](https://github.com/vuetifyjs/vuetify/tree/master/packages/docs/src/examples)
+* [Material Design Icon](https://pictogrammers.com/library/mdi/)
